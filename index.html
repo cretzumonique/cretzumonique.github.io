@@ -1,14 +1,352 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Monica Cretu | CS Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background-color: #f9f9f7;
+      color: #2c2c2c;
+      line-height: 1.7;
+    }
+
+    header {
+      background-color: #2E4057;
+      color: #ffffff;
+      padding: 48px 40px 36px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1.05em;
+      color: #c8d4e0;
+    }
+
+    nav {
+      background-color: #1a2a38;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: #a8c4d8;
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 0.95em;
+      font-family: Arial, sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    nav a:hover { color: #ffffff; }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      color: #2E4057;
+      border-bottom: 2px solid #2E4057;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+      font-family: Arial, sans-serif;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      color: #2E4057;
+      margin: 20px 0 6px;
+      font-family: Arial, sans-serif;
+    }
+
+    p { margin-bottom: 12px; }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid #dde3ea;
+      border-left: 4px solid #2E4057;
+      border-radius: 4px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+    }
+
+    .card p { margin-bottom: 6px; }
+
+    .btn {
+      display: inline-block;
+      background-color: #2E4057;
+      color: #ffffff;
+      padding: 10px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 0.9em;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    .btn:hover { background-color: #1a2a38; }
+
+    .btn-outline {
+      background-color: transparent;
+      border: 2px solid #2E4057;
+      color: #2E4057;
+    }
+
+    .btn-outline:hover {
+      background-color: #2E4057;
+      color: #ffffff;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: #e8f0fe;
+      color: #2E4057;
+      border-radius: 12px;
+      padding: 3px 12px;
+      font-size: 0.82em;
+      font-family: Arial, sans-serif;
+      margin: 3px 3px 3px 0;
+    }
+
+    .outcome-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .outcome-list li {
+      padding: 8px 0 8px 20px;
+      border-bottom: 1px solid #eee;
+      position: relative;
+    }
+
+    .outcome-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #2E4057;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #2E4057;
+      color: #a8c4d8;
+      text-align: center;
+      padding: 24px;
+      font-size: 0.88em;
+      font-family: Arial, sans-serif;
+    }
+  </style>
 </head>
 <body>
-  <h1>Monica Cretu</h1>
-  <h2>Computer Science ePortfolio</h2>
-  <p>Bachelor of Science in Computer Science | SNHU 2026</p>
-  <p>Quality Engineer | Lapeer, Michigan</p>
-  <hr>
-  <p>Portfolio content coming soon.</p>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Monica Cretu</h1>
+    <p>Computer Science ePortfolio &nbsp;|&nbsp; Southern New Hampshire University &nbsp;|&nbsp; BS Computer Science</p>
+    <p style="margin-top:6px; font-size:0.92em; color:#a8c4d8;">
+      Quality Engineer &nbsp;|&nbsp; Lapeer, Michigan &nbsp;|&nbsp; Project Management for STEM Concentration
+    </p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#code-review">Code Review</a>
+    <a href="#artifacts">Artifacts</a>
+    <a href="#outcomes">Course Outcomes</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>Professional Self-Assessment</h2>
+      <p>
+        Welcome to my Computer Science ePortfolio. I began the BS Computer Science program
+        at Southern New Hampshire University in 2023 with no prior formal computer science
+        background, bringing instead a professional foundation as a Quality Engineer in the
+        manufacturing industry. This portfolio represents the culmination of that journey —
+        demonstrating growth across software engineering, algorithms and data structures,
+        and database design through a series of systematic enhancements to a real Android
+        application.
+      </p>
+      <p>
+        My professional background in quality engineering — defect prevention, process
+        improvement, and root cause analysis — translates directly into software development.
+        The same discipline that drives quality on a manufacturing floor applies to writing
+        maintainable, secure, and well-tested code. This portfolio reflects both the
+        technical skills developed through the program and the professional mindset I bring
+        from the field.
+      </p>
+      <p>
+        <em>Full Professional Self-Assessment coming in Module Seven.</em>
+      </p>
+    </section>
+
+    <!-- CODE REVIEW -->
+    <section id="code-review">
+      <h2>Code Review</h2>
+      <p>
+        The code review is an informal walkthrough of the original Weight Tracker Android
+        Application, analyzing existing code against a structured checklist and presenting
+        the planned enhancements across three computer science categories.
+      </p>
+
+      <div class="card">
+        <h3>Code Review Video</h3>
+        <p><strong>Artifact:</strong> Weight Tracker Android Application (CS 360)</p>
+        <p><strong>Duration:</strong> ~30 minutes</p>
+        <p><strong>Topics covered:</strong> Existing functionality walkthrough, code analysis
+        (structure, security, efficiency, documentation), and planned enhancements for
+        Software Engineering, Algorithms and Data Structures, and Databases.</p>
+        <!-- REPLACE THE HREF BELOW WITH YOUR ACTUAL VIDEO LINK -->
+        <a href="https://www.youtube.com/watch?v=QIUBRxwnjao" class="btn" target="_blank">Watch Code Review Video</a>
+      </div>
+
+      <h3>Code Review Highlights</h3>
+      <p>Key findings from the code review that drove the enhancement plan:</p>
+      <div class="card">
+        <p><strong>Software Engineering:</strong> No architectural pattern (MVVM absent),
+        business logic embedded in Activity classes, no input validation, orphaned SMS method.</p>
+      </div>
+      <div class="card">
+        <p><strong>Algorithms &amp; Data Structures:</strong> Entries ordered by insertion ID
+        rather than date, no sorting or filtering, no trend analysis or rolling average,
+        O(n) full scan on every load with no optimization.</p>
+      </div>
+      <div class="card">
+        <p><strong>Databases:</strong> Critical plaintext password storage, inconsistent
+        query safety (rawQuery with string concatenation), destructive onUpgrade strategy,
+        no DAO abstraction layer.</p>
+      </div>
+    </section>
+
+    <!-- ARTIFACTS -->
+    <section id="artifacts">
+      <h2>Enhanced Artifacts</h2>
+      <p>
+        All three enhancements apply to the same artifact — the Weight Tracker Android
+        Application originally developed in CS 360. Using one artifact across all three
+        categories demonstrates the ability to iteratively improve a real system across
+        multiple dimensions of computer science.
+      </p>
+
+      <!-- ARTIFACT 1 -->
+      <div class="card">
+        <h3>Enhancement One — Software Engineering and Design</h3>
+        <p><strong>Status:</strong> Complete — submitted for Milestone Two</p>
+        <p><strong>Key enhancements:</strong></p>
+        <span class="badge">Progress Dashboard</span>
+        <span class="badge">Dirty Flag Pattern</span>
+        <span class="badge">Input Validation</span>
+        <span class="badge">DiffUtil Adapter</span>
+        <span class="badge">SMS Goal Trigger</span>
+        <span class="badge">Javadoc</span>
+        <p style="margin-top:12px;">
+          Added a progress dashboard with ProgressBar, implemented the dirty flag pattern
+          to eliminate redundant database reloads, added numeric range validation across
+          all entry points, replaced notifyDataSetChanged with DiffUtil, wired the
+          sendGoalReachedSms method to trigger automatically when goal is reached, and
+          added comprehensive Javadoc to all classes and methods.
+        </p>
+        <!-- REPLACE HREF WITH YOUR ACTUAL GITHUB FILE LINK -->
+        <a href="YOUR_GITHUB_REPO_LINK_HERE" class="btn btn-outline" target="_blank">View Code on GitHub</a>
+      </div>
+
+      <!-- ARTIFACT 2 -->
+      <div class="card">
+        <h3>Enhancement Two — Algorithms and Data Structures</h3>
+        <p><strong>Status:</strong> Complete — submitted for Milestone Three</p>
+        <p><strong>Key enhancements:</strong></p>
+        <span class="badge">7-Day Rolling Average O(n)</span>
+        <span class="badge">Trend Detection</span>
+        <span class="badge">Binary Search O(log n)</span>
+        <span class="badge">Multi-Criteria Sort O(n log n)</span>
+        <span class="badge">Streak Calculator O(n)</span>
+        <p style="margin-top:12px;">
+          Introduced a Trend Analysis Engine (WeightAnalytics, AnalyticsManager,
+          TrendSummary) implementing five algorithms: sliding window rolling average,
+          trend direction detection, binary search for date-range lookup, TimSort-based
+          multi-criteria sorting, and best-streak calculator. Added sort Spinner to UI
+          and analytics dashboard panel to MainActivity.
+        </p>
+        <a href="YOUR_GITHUB_REPO_LINK_HERE" class="btn btn-outline" target="_blank">View Code on GitHub</a>
+      </div>
+
+      <!-- ARTIFACT 3 -->
+      <div class="card">
+        <h3>Enhancement Three — Databases</h3>
+        <p><strong>Status:</strong> In progress — Milestone Four</p>
+        <p><strong>Planned enhancements:</strong></p>
+        <span class="badge">Android Room Migration</span>
+        <span class="badge">DAO Pattern</span>
+        <span class="badge">BCrypt Password Hashing</span>
+        <span class="badge">LiveData Queries</span>
+        <span class="badge">Data-Preserving Migration</span>
+        <p style="margin-top:12px;"><em>Enhancement in progress. Content will be updated upon completion.</em></p>
+      </div>
+    </section>
+
+    <!-- COURSE OUTCOMES -->
+    <section id="outcomes">
+      <h2>Course Outcomes</h2>
+      <ul class="outcome-list">
+        <li>
+          <strong>Outcome 1 — Collaborative Environments:</strong>
+          Addressed through comprehensive Javadoc documentation across all classes,
+          enabling any developer to understand, maintain, or extend the codebase.
+          Full coverage in Professional Self-Assessment (Module Seven).
+        </li>
+        <li>
+          <strong>Outcome 2 — Professional Communication:</strong>
+          Addressed through the code review video, all milestone narratives, and
+          this ePortfolio presentation.
+        </li>
+        <li>
+          <strong>Outcome 3 — Algorithmic Solutions:</strong>
+          Addressed through Enhancement Two — documented time complexity trade-offs
+          (O(n) sliding window vs O(n*k) naive, O(log n) binary search vs O(n) linear scan).
+        </li>
+        <li>
+          <strong>Outcome 4 — Innovative Techniques:</strong>
+          Addressed through Enhancement One (DiffUtil, dirty flag, MVVM-scale refactor)
+          and Enhancement Two (Trend Analysis Engine, multi-criteria sorting).
+        </li>
+        <li>
+          <strong>Outcome 5 — Security Mindset:</strong>
+          Partially addressed through input validation in Enhancements One and Two.
+          Full coverage planned in Enhancement Three (BCrypt, parameterized DAO queries).
+        </li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Monica Cretu &nbsp;|&nbsp; BS Computer Science &nbsp;|&nbsp; Southern New Hampshire University &nbsp;|&nbsp; 2025</p>
+    <p style="margin-top:6px;">
+      <a href="https://github.com/cretzumonique" style="color:#a8c4d8;">GitHub Profile</a>
+    </p>
+  </footer>
+
 </body>
 </html>
+
