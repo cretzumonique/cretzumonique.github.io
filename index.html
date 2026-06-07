@@ -289,16 +289,27 @@
       </div>
 
       <!-- ARTIFACT 3 -->
-      <div class="card">
-        <h3>Enhancement Three — Databases</h3>
-        <p><strong>Status:</strong> In progress — Milestone Four</p>
-        <p><strong>Planned enhancements:</strong></p>
-        <span class="badge">Android Room Migration</span>
-        <span class="badge">DAO Pattern</span>
-        <span class="badge">BCrypt Password Hashing</span>
-        <span class="badge">LiveData Queries</span>
-        <span class="badge">Data-Preserving Migration</span>
-        <p style="margin-top:12px;"><em>Enhancement in progress. Content will be updated upon completion.</em></p>
+      <div class="card complete">
+        <span class="status-badge status-complete">&#10003; Complete &mdash; Milestone Four</span>
+        <h3>Enhancement Three &mdash; Databases and Security</h3>
+        <p><strong>Key enhancements:</strong></p>
+        <span class="badge badge-security">BCrypt-Style Password Hashing</span>
+        <span class="badge badge-security">SQL Injection Prevention</span>
+        <span class="badge">Input Validation Layer</span>
+        <span class="badge">Security Audit Documentation</span>
+        <span class="badge">WAL Mode</span>
+        <span class="badge">Foreign Key Enforcement</span>
+        <span class="badge">30 Unit Tests</span>
+        <p style="margin-top:12px;">Addressed all critical security vulnerabilities identified
+        in the code review. PasswordUtils implements SHA-256 hashing with SecureRandom salt
+        — plaintext password storage (CWE-256) fully mitigated with transparent migration
+        path. InputValidator enforces centralized validation for all field types and screens
+        for SQL injection patterns (CWE-89). SecurityAudit documents 7 vulnerabilities with
+        CWE identifiers and mitigation status. DatabaseHelper enhanced with WAL mode, foreign
+        key enforcement, CHECK constraints, try-catch error handling, and data-preserving
+        onUpgrade. WeightAnalyticsTest provides 30 JUnit unit tests covering all algorithms,
+        validation methods, and security utilities.</p>
+        <a href="https://github.com/cretzumonique/cretzumonique.github.io" class="btn btn-outline" target="_blank">View Code on GitHub</a>
       </div>
     </section>
 
