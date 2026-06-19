@@ -17,7 +17,7 @@ This repository hosts my CS 499 Computer Science Capstone ePortfolio for the BS 
 ## Repository Structure
 
 - `index.html` — the ePortfolio site (rendered via GitHub Pages)
-- Source code files for each enhancement (`.java`, `.xml`)
+- Source code files for each enhancement
 - Project zip files containing the full Android Studio project for each milestone
 
 ## Technologies
