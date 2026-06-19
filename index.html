@@ -6,168 +6,47 @@
   <title>Monica Cretu | CS Portfolio</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      background-color: #f9f9f7;
-      color: #2c2c2c;
-      line-height: 1.7;
-    }
-
-    header {
-      background-color: #2E4057;
-      color: #ffffff;
-      padding: 48px 40px 36px;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.2em;
-      letter-spacing: 1px;
-      margin-bottom: 8px;
-    }
-
-    header p {
-      font-size: 1.05em;
-      color: #c8d4e0;
-    }
-
-    nav {
-      background-color: #1a2a38;
-      text-align: center;
-      padding: 12px;
-    }
-
-    nav a {
-      color: #a8c4d8;
-      text-decoration: none;
-      margin: 0 18px;
-      font-size: 0.95em;
-      font-family: Arial, sans-serif;
-      letter-spacing: 0.5px;
-    }
-
+    body { font-family: Georgia, "Times New Roman", serif; background-color: #f9f9f7; color: #2c2c2c; line-height: 1.7; }
+    header { background-color: #2E4057; color: #ffffff; padding: 48px 40px 36px; text-align: center; }
+    header h1 { font-size: 2.2em; letter-spacing: 1px; margin-bottom: 8px; }
+    header p { font-size: 1.05em; color: #c8d4e0; }
+    nav { background-color: #1a2a38; text-align: center; padding: 12px; }
+    nav a { color: #a8c4d8; text-decoration: none; margin: 0 18px; font-size: 0.95em; font-family: Arial, sans-serif; letter-spacing: 0.5px; }
     nav a:hover { color: #ffffff; }
-
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 40px 24px;
-    }
-
-    section {
-      margin-bottom: 48px;
-    }
-
-    h2 {
-      font-size: 1.4em;
-      color: #2E4057;
-      border-bottom: 2px solid #2E4057;
-      padding-bottom: 6px;
-      margin-bottom: 16px;
-      font-family: Arial, sans-serif;
-    }
-
-    h3 {
-      font-size: 1.1em;
-      color: #2E4057;
-      margin: 20px 0 6px;
-      font-family: Arial, sans-serif;
-    }
-
+    .container { max-width: 860px; margin: 0 auto; padding: 40px 24px; }
+    section { margin-bottom: 48px; }
+    h2 { font-size: 1.4em; color: #2E4057; border-bottom: 2px solid #2E4057; padding-bottom: 6px; margin-bottom: 16px; font-family: Arial, sans-serif; }
+    h3 { font-size: 1.1em; color: #2E4057; margin: 20px 0 6px; font-family: Arial, sans-serif; }
+    h4 { font-size: 1.0em; color: #2E4057; margin: 16px 0 4px; font-family: Arial, sans-serif; }
     p { margin-bottom: 12px; }
-
-    .card {
-      background: #ffffff;
-      border: 1px solid #dde3ea;
-      border-left: 4px solid #2E4057;
-      border-radius: 4px;
-      padding: 20px 24px;
-      margin-bottom: 20px;
-    }
-
-    .card p { margin-bottom: 6px; }
-
-    .btn {
-      display: inline-block;
-      background-color: #2E4057;
-      color: #ffffff;
-      padding: 10px 22px;
-      border-radius: 4px;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 0.9em;
-      margin-top: 10px;
-      margin-right: 10px;
-    }
-
+    .card { background: #ffffff; border: 1px solid #dde3ea; border-left: 4px solid #2E4057; border-radius: 4px; padding: 20px 24px; margin-bottom: 20px; }
+    .card.complete { border-left: 4px solid #1D6A1D; }
+    .card.self-assess { border-left: 4px solid #2E4057; background-color: #f4f7fb; }
+    .status-badge { display: inline-block; padding: 3px 12px; border-radius: 12px; font-size: 0.82em; font-family: Arial, sans-serif; font-weight: bold; margin-bottom: 8px; }
+    .status-complete { background-color: #e8f4e8; color: #1D6A1D; }
+    .btn { display: inline-block; background-color: #2E4057; color: #ffffff; padding: 10px 22px; border-radius: 4px; text-decoration: none; font-family: Arial, sans-serif; font-size: 0.9em; margin-top: 10px; margin-right: 10px; }
     .btn:hover { background-color: #1a2a38; }
-
-    .btn-outline {
-      background-color: transparent;
-      border: 2px solid #2E4057;
-      color: #2E4057;
-    }
-
-    .btn-outline:hover {
-      background-color: #2E4057;
-      color: #ffffff;
-    }
-
-    .badge {
-      display: inline-block;
-      background-color: #e8f0fe;
-      color: #2E4057;
-      border-radius: 12px;
-      padding: 3px 12px;
-      font-size: 0.82em;
-      font-family: Arial, sans-serif;
-      margin: 3px 3px 3px 0;
-    }
-
-    .outcome-list {
-      list-style: none;
-      padding: 0;
-    }
-
-    .outcome-list li {
-      padding: 8px 0 8px 20px;
-      border-bottom: 1px solid #eee;
-      position: relative;
-    }
-
-    .outcome-list li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: #2E4057;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: #2E4057;
-      color: #a8c4d8;
-      text-align: center;
-      padding: 24px;
-      font-size: 0.88em;
-      font-family: Arial, sans-serif;
-    }
+    .btn-outline { background-color: transparent; border: 2px solid #2E4057; color: #2E4057; }
+    .btn-outline:hover { background-color: #2E4057; color: #ffffff; }
+    .badge { display: inline-block; background-color: #e8f0fe; color: #2E4057; border-radius: 12px; padding: 3px 12px; font-size: 0.82em; font-family: Arial, sans-serif; margin: 3px 3px 3px 0; }
+    .badge-security { background-color: #fde8e8; color: #8B0000; }
+    .outcome-list { list-style: none; padding: 0; }
+    .outcome-list li { padding: 8px 0 8px 20px; border-bottom: 1px solid #eee; position: relative; }
+    .outcome-list li::before { content: "✓"; position: absolute; left: 0; color: #2E4057; font-weight: bold; }
+    .divider { border: none; border-top: 1px solid #dde3ea; margin: 24px 0; }
+    footer { background-color: #2E4057; color: #a8c4d8; text-align: center; padding: 24px; font-size: 0.88em; font-family: Arial, sans-serif; }
   </style>
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <h1>Monica Cretu</h1>
     <p>Computer Science ePortfolio &nbsp;|&nbsp; Southern New Hampshire University &nbsp;|&nbsp; BS Computer Science</p>
-    <p style="margin-top:6px; font-size:0.92em; color:#a8c4d8;">
-      Quality Engineer &nbsp;|&nbsp; Lapeer, Michigan &nbsp;|&nbsp; Project Management for STEM Concentration
-    </p>
+    <p style="margin-top:6px; font-size:0.92em; color:#a8c4d8;">Quality Engineer &nbsp;|&nbsp; Lapeer, Michigan &nbsp;|&nbsp; Project Management for STEM Concentration</p>
   </header>
 
-  <!-- NAVIGATION -->
   <nav>
-    <a href="#about">About</a>
+    <a href="#self-assessment">Self-Assessment</a>
     <a href="#code-review">Code Review</a>
     <a href="#artifacts">Artifacts</a>
     <a href="#outcomes">Course Outcomes</a>
@@ -175,82 +54,67 @@
 
   <div class="container">
 
-    <!-- ABOUT -->
-    <section id="about">
+    <!-- PROFESSIONAL SELF-ASSESSMENT — first per rubric requirement -->
+    <section id="self-assessment">
       <h2>Professional Self-Assessment</h2>
-      <p>
-        Welcome to my Computer Science ePortfolio. I began the BS Computer Science program
-        at Southern New Hampshire University in 2023 with no prior formal computer science
-        background, bringing instead a professional foundation as a Quality Engineer in the
-        manufacturing industry. This portfolio represents the culmination of that journey —
-        demonstrating growth across software engineering, algorithms and data structures,
-        and database design through a series of systematic enhancements to a real Android
-        application.
-      </p>
-      <p>
-        My professional background in quality engineering — defect prevention, process
-        improvement, and root cause analysis — translates directly into software development.
-        The same discipline that drives quality on a manufacturing floor applies to writing
-        maintainable, secure, and well-tested code. This portfolio reflects both the
-        technical skills developed through the program and the professional mindset I bring
-        from the field.
-      </p>
-      <p>
-        <em>Full Professional Self-Assessment coming in Module Seven.</em>
-      </p>
+
+      <div class="card self-assess">
+        <p>Completing the Bachelor of Science in Computer Science program at Southern New Hampshire University has been a transformative experience, particularly because I began the program in 2023 with no prior formal background in computer science. My professional foundation as a Quality Engineer in the prototyping and manufacturing industry shaped how I approached every course, every project, and ultimately this capstone. Quality engineering is fundamentally about defect prevention, root cause analysis, process documentation, and continuous improvement — and I have found that these are not merely transferable soft skills, but the same underlying discipline that distinguishes professional software development from amateur coding.</p>
+      </div>
+
+      <h3>Collaborating in a Team Environment</h3>
+      <p>Throughout the program, collaboration was woven into coursework that simulated real development environments. In CS 250 (Software Development Lifecycle), team-based sprint planning and stand-up style check-ins mirrored Agile practices, and in CS 320 (Software Testing, Automation, and Quality Assurance) peer code reviews required giving and receiving constructive technical feedback — a skill directly exercised again in this capstone's Milestone One code review. In my professional role, I regularly facilitate cross-functional meetings between engineering, production, and quality teams. Each milestone in this capstone explicitly responded to instructor feedback from the prior milestone, which is itself a form of asynchronous collaboration. When Milestone Two received feedback to expand security controls and testing, that feedback directly shaped the priorities for Milestone Four.</p>
+
+      <h3>Communicating with Stakeholders</h3>
+      <p>Professional-quality communication was a thread running through every milestone. The code review video required translating technical code analysis into a walkthrough appropriate for peers or a manager. Each milestone narrative required explaining why an artifact was selected, what specific skills were demonstrated, and how course outcomes were achieved — in language precise enough for a technical evaluator but clear enough to serve as a writing sample for a future employer. In my current role, I write quality reports and corrective action documentation that must satisfy both engineering teams who need technical detail and management who need risk and impact summarized at a glance. The ePortfolio itself is the culmination of this skill: presenting four milestones of technical work as a single, navigable, professional narrative.</p>
+
+      <h3>Data Structures and Algorithms</h3>
+      <p>The Algorithms and Data Structures enhancement in Milestone Three was the most technically concentrated demonstration of growth in this area. Building the Trend Analysis Engine required implementing five distinct algorithms — a sliding window for the 7-day rolling average achieving O(n) time complexity, binary search for date-range lookup at O(log n), TimSort-based multi-criteria sorting at O(n log n), trend direction detection, and a single-pass streak calculator. The most significant realization was that algorithmic efficiency is not an academic exercise — the difference between an O(n) sliding window and an O(n*k) naive recalculation is invisible with 10 data points but becomes significant with 365 daily entries, which is a realistic usage pattern for the application.</p>
+
+      <h3>Software Engineering and Database</h3>
+      <p>Software engineering competency was demonstrated in Milestone Two through a substantial architectural refactor: progress dashboard, dirty flag pattern, DiffUtil adapter, and comprehensive input validation and Javadoc. That milestone received positive instructor feedback noting strong software engineering growth. Database competency was demonstrated in Milestone Four: Write-Ahead Logging mode, foreign key enforcement, CHECK constraints at the schema level, and data-preserving ALTER TABLE migration strategy. Both enhancements adopted industry-standard practices specifically because they improve the application beyond minimum functional requirements — demonstrating the kind of engineering judgment expected in professional development.</p>
+
+      <h3>Security</h3>
+      <p>Security was the area of most significant personal growth. The original Weight Tracker artifact stored user passwords as plaintext — a critical vulnerability (CWE-256) I did not recognize as a student in CS 360. By the time of this capstone, after CS 405 (Secure Coding) and the broader program emphasis on a security mindset, identifying and mitigating that exact vulnerability in my own earlier work was a powerful demonstration of growth. Milestone Four implemented salted SHA-256 password hashing with a transparent migration path, centralized SQL injection screening, and a SecurityAudit class documenting seven identified vulnerabilities by CWE identifier, severity, and mitigation status.</p>
+
+      <h3>How the Artifacts Fit Together</h3>
+      <p>All three enhancements were applied to a single artifact — the Weight Tracker Android Application from CS 360 — to demonstrate the realistic lifecycle of a software project. Enhancement One established a more maintainable architecture. Enhancement Two built on that architecture to add the Trend Analysis Engine. Enhancement Three hardened the data layer underlying both prior enhancements. Together they tell a coherent story: a functional but unrefined mobile application was transformed, through a structured and feedback-driven process, into a more architecturally sound, algorithmically capable, and secure application — directly mirroring the incremental improvement work expected of a software engineer or technical project manager in industry.</p>
+
+      <h3>Professional Direction</h3>
+      <p>This capstone has confirmed my professional direction toward technical project management and quality assurance leadership in software development. The combination of my quality engineering background with the technical competencies demonstrated in this ePortfolio positions me to bridge the gap between engineering teams and organizational stakeholders. I plan to pursue PMP certification as a complement to this degree, and this ePortfolio will serve as the technical foundation supporting that transition.</p>
     </section>
 
     <!-- CODE REVIEW -->
     <section id="code-review">
       <h2>Code Review</h2>
-      <p>
-        The code review is an informal walkthrough of the original Weight Tracker Android
-        Application, analyzing existing code against a structured checklist and presenting
-        the planned enhancements across three computer science categories.
-      </p>
-
+      <p>The code review is an informal walkthrough of the original Weight Tracker Android Application, analyzing existing code against a structured checklist and presenting the planned enhancements across three computer science categories.</p>
       <div class="card">
         <h3>Code Review Video</h3>
         <p><strong>Artifact:</strong> Weight Tracker Android Application (CS 360)</p>
         <p><strong>Duration:</strong> ~20 minutes</p>
-        <p><strong>Topics covered:</strong> Existing functionality walkthrough, code analysis
-        (structure, security, efficiency, documentation), and planned enhancements for
-        Software Engineering, Algorithms and Data Structures, and Databases.</p>
+        <p><strong>Topics covered:</strong> Existing functionality walkthrough, code analysis (structure, security, efficiency, documentation), and planned enhancements for Software Engineering, Algorithms and Data Structures, and Databases.</p>
         <a href="https://www.youtube.com/watch?v=QIUBRxwnjao" class="btn" target="_blank">Watch Code Review Video</a>
       </div>
-
       <h3>Code Review Highlights</h3>
-      <p>Key findings from the code review that drove the enhancement plan:</p>
       <div class="card">
-        <p><strong>Software Engineering:</strong> No architectural pattern (MVVM absent),
-        business logic embedded in Activity classes, no input validation, orphaned SMS method.</p>
+        <p><strong>Software Engineering:</strong> No architectural pattern (MVVM absent), business logic embedded in Activity classes, no input validation, orphaned SMS method.</p>
       </div>
       <div class="card">
-        <p><strong>Algorithms &amp; Data Structures:</strong> Entries ordered by insertion ID
-        rather than date, no sorting or filtering, no trend analysis or rolling average,
-        O(n) full scan on every load with no optimization.</p>
+        <p><strong>Algorithms &amp; Data Structures:</strong> Entries ordered by insertion ID rather than date, no sorting or filtering, no trend analysis or rolling average, O(n) full scan on every load with no optimization.</p>
       </div>
       <div class="card">
-        <p><strong>Databases:</strong> Critical plaintext password storage, inconsistent
-        query safety (rawQuery with string concatenation), destructive onUpgrade strategy,
-        no DAO abstraction layer.</p>
+        <p><strong>Databases:</strong> Critical plaintext password storage, inconsistent query safety (rawQuery with string concatenation), destructive onUpgrade strategy, no DAO abstraction layer.</p>
       </div>
     </section>
 
     <!-- ARTIFACTS -->
     <section id="artifacts">
       <h2>Enhanced Artifacts</h2>
-      <p>
-        All three enhancements apply to the same artifact — the Weight Tracker Android
-        Application originally developed in CS 360. Using one artifact across all three
-        categories demonstrates the ability to iteratively improve a real system across
-        multiple dimensions of computer science.
-      </p>
+      <p>All three enhancements apply to the same artifact — the Weight Tracker Android Application originally developed in CS 360. Using one artifact across all three categories demonstrates the ability to iteratively improve a real system across multiple dimensions of computer science.</p>
 
-      <!-- ARTIFACT 1 -->
-      <div class="card">
-        <h3>Enhancement One — Software Engineering and Design</h3>
-        <p><strong>Status:</strong> Complete — submitted for Milestone Two</p>
+      <div class="card complete">
+        <span class="status-badge status-complete">&#10003; Complete &mdash; Milestone Two</span>
+        <h3>Enhancement One &mdash; Software Engineering and Design</h3>
         <p><strong>Key enhancements:</strong></p>
         <span class="badge">Progress Dashboard</span>
         <span class="badge">Dirty Flag Pattern</span>
@@ -258,37 +122,26 @@
         <span class="badge">DiffUtil Adapter</span>
         <span class="badge">SMS Goal Trigger</span>
         <span class="badge">Javadoc</span>
-        <p style="margin-top:12px;">
-          Added a progress dashboard with ProgressBar, implemented the dirty flag pattern
-          to eliminate redundant database reloads, added numeric range validation across
-          all entry points, replaced notifyDataSetChanged with DiffUtil, wired the
-          sendGoalReachedSms method to trigger automatically when goal is reached, and
-          added comprehensive Javadoc to all classes and methods.
-        </p>
+        <p style="margin-top:12px;">Added a progress dashboard with ProgressBar, implemented the dirty flag pattern to eliminate redundant database reloads, added numeric range validation across all entry points, replaced notifyDataSetChanged with DiffUtil for efficient RecyclerView updates, wired the sendGoalReachedSms method to trigger automatically when goal is reached, and added comprehensive Javadoc to all classes and methods.</p>
+        <p><strong>Instructor feedback:</strong> Meets expectations. Strong software engineering growth demonstrated.</p>
         <a href="https://github.com/cretzumonique/cretzumonique.github.io" class="btn btn-outline" target="_blank">View Code on GitHub</a>
       </div>
 
-      <!-- ARTIFACT 2 -->
-      <div class="card">
-        <h3>Enhancement Two — Algorithms and Data Structures</h3>
-        <p><strong>Status:</strong> Complete — submitted for Milestone Three</p>
+      <div class="card complete">
+        <span class="status-badge status-complete">&#10003; Complete &mdash; Milestone Three</span>
+        <h3>Enhancement Two &mdash; Algorithms and Data Structures</h3>
         <p><strong>Key enhancements:</strong></p>
         <span class="badge">7-Day Rolling Average O(n)</span>
         <span class="badge">Trend Detection</span>
         <span class="badge">Binary Search O(log n)</span>
         <span class="badge">Multi-Criteria Sort O(n log n)</span>
         <span class="badge">Streak Calculator O(n)</span>
-        <p style="margin-top:12px;">
-          Introduced a Trend Analysis Engine (WeightAnalytics, AnalyticsManager,
-          TrendSummary) implementing five algorithms: sliding window rolling average,
-          trend direction detection, binary search for date-range lookup, TimSort-based
-          multi-criteria sorting, and best-streak calculator. Added sort Spinner to UI
-          and analytics dashboard panel to MainActivity.
-        </p>
+        <span class="badge">Sort Spinner</span>
+        <p style="margin-top:12px;">Introduced a Trend Analysis Engine (WeightAnalytics, AnalyticsManager, TrendSummary) implementing five algorithms: sliding window rolling average, trend direction detection, binary search for date-range lookup, TimSort-based multi-criteria sorting, and best-streak calculator. Added sort Spinner to UI and analytics dashboard panel to MainActivity.</p>
+        <p><strong>Instructor feedback:</strong> Meets expectations. No changes required.</p>
         <a href="https://github.com/cretzumonique/cretzumonique.github.io" class="btn btn-outline" target="_blank">View Code on GitHub</a>
       </div>
 
-      <!-- ARTIFACT 3 -->
       <div class="card complete">
         <span class="status-badge status-complete">&#10003; Complete &mdash; Milestone Four</span>
         <h3>Enhancement Three &mdash; Databases and Security</h3>
@@ -300,62 +153,33 @@
         <span class="badge">WAL Mode</span>
         <span class="badge">Foreign Key Enforcement</span>
         <span class="badge">30 Unit Tests</span>
-        <p style="margin-top:12px;">Addressed all critical security vulnerabilities identified
-        in the code review. PasswordUtils implements SHA-256 hashing with SecureRandom salt
-        — plaintext password storage (CWE-256) fully mitigated with transparent migration
-        path. InputValidator enforces centralized validation for all field types and screens
-        for SQL injection patterns (CWE-89). SecurityAudit documents 7 vulnerabilities with
-        CWE identifiers and mitigation status. DatabaseHelper enhanced with WAL mode, foreign
-        key enforcement, CHECK constraints, try-catch error handling, and data-preserving
-        onUpgrade. WeightAnalyticsTest provides 30 JUnit unit tests covering all algorithms,
-        validation methods, and security utilities.</p>
+        <p style="margin-top:12px;">Addressed all critical security vulnerabilities identified in the code review. PasswordUtils implements SHA-256 hashing with SecureRandom salt — plaintext password storage (CWE-256) fully mitigated with transparent migration path. InputValidator enforces centralized validation for all field types and screens for SQL injection patterns (CWE-89). SecurityAudit documents 7 vulnerabilities with CWE identifiers and mitigation status. DatabaseHelper enhanced with WAL mode, foreign key enforcement, CHECK constraints, try-catch error handling, and data-preserving onUpgrade. WeightAnalyticsTest provides 30 JUnit unit tests.</p>
+        <p><strong>Instructor feedback:</strong> Meets expectations. No changes required.</p>
         <a href="https://github.com/cretzumonique/cretzumonique.github.io" class="btn btn-outline" target="_blank">View Code on GitHub</a>
       </div>
+
     </section>
 
     <!-- COURSE OUTCOMES -->
     <section id="outcomes">
       <h2>Course Outcomes</h2>
       <ul class="outcome-list">
-        <li>
-          <strong>Outcome 1 — Collaborative Environments:</strong>
-          Addressed through comprehensive Javadoc documentation across all classes,
-          enabling any developer to understand, maintain, or extend the codebase.
-          Full coverage in Professional Self-Assessment (Module Seven).
-        </li>
-        <li>
-          <strong>Outcome 2 — Professional Communication:</strong>
-          Addressed through the code review video, all milestone narratives, and
-          this ePortfolio presentation.
-        </li>
-        <li>
-          <strong>Outcome 3 — Algorithmic Solutions:</strong>
-          Addressed through Enhancement Two — documented time complexity trade-offs
-          (O(n) sliding window vs O(n*k) naive, O(log n) binary search vs O(n) linear scan).
-        </li>
-        <li>
-          <strong>Outcome 4 — Innovative Techniques:</strong>
-          Addressed through Enhancement One (DiffUtil, dirty flag, MVVM-scale refactor)
-          and Enhancement Two (Trend Analysis Engine, multi-criteria sorting).
-        </li>
-        <li>
-          <strong>Outcome 5 — Security Mindset:</strong>
-          Partially addressed through input validation in Enhancements One and Two.
-          Full coverage planned in Enhancement Three (BCrypt, parameterized DAO queries).
-        </li>
+        <li><strong>Outcome 1 &mdash; Collaborative Environments:</strong> Addressed through comprehensive Javadoc documentation, SecurityAudit living vulnerability documentation, unit tests as executable documentation, and iterative incorporation of instructor feedback across all four milestones.</li>
+        <li><strong>Outcome 2 &mdash; Professional Communication:</strong> Addressed through the code review video, all four milestone narratives, the Professional Self-Assessment, and this ePortfolio.</li>
+        <li><strong>Outcome 3 &mdash; Algorithmic Solutions:</strong> Addressed through Enhancement Two — five algorithms implemented with explicit time complexity documentation and trade-off analysis (O(n) sliding window, O(log n) binary search, O(n log n) TimSort).</li>
+        <li><strong>Outcome 4 &mdash; Innovative Techniques:</strong> Addressed through Enhancement One (DiffUtil, dirty flag, MVVM-scale refactor), Enhancement Two (Trend Analysis Engine pipeline), and Enhancement Three (WAL mode, parameterized queries, secure database configuration).</li>
+        <li><strong>Outcome 5 &mdash; Security Mindset:</strong> Fully addressed through Enhancement Three — BCrypt-style password hashing mitigates CWE-256, InputValidator SQL injection screening mitigates CWE-89, SecurityAudit documents 7 vulnerabilities with CWE identifiers and mitigations.</li>
       </ul>
     </section>
 
   </div>
 
-  <!-- FOOTER -->
   <footer>
     <p>Monica Cretu &nbsp;|&nbsp; BS Computer Science &nbsp;|&nbsp; Southern New Hampshire University &nbsp;|&nbsp; 2026</p>
-    <p style="margin-top:6px;">
-      <a href="https://github.com/cretzumonique" style="color:#a8c4d8;">GitHub Profile</a>
-    </p>
+    <p style="margin-top:6px;"><a href="https://github.com/cretzumonique" style="color:#a8c4d8;">GitHub Profile</a></p>
   </footer>
 
 </body>
 </html>
+
 
